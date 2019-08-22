@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    list-style-type: none;
 }
 
 body{
@@ -12,30 +13,45 @@ body{
 #topnav ul{
     position: relative;
     text-align: right;
-    padding: 20px 30px;
+    padding: 15px 25px;
 }
 
 #topnav li{
     display: inline;
-    margin: 0 10px;
+    margin: 0 5px;
 }
 
 #topnav a{
     text-decoration: none;
     color: black;
+    font-size: 13px;
+}
+
+.googleapps img{
+    position: relative;
+    top: 8px;
+    margin-left: 10px;
+    margin-right: 5px;
 }
 
 #topnav .signin{
     border: 1px solid #4285f4;
     background-color: #4285f4;
+    padding: 6px 8px;
+    border-radius: 2px;
+}
+
+#topnav li.signin a{
+    padding: 6px 5px;
     color: white;
-    padding: 5px 8px;
-    border-radius: 3px;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 2px 0;
 }
 
 main{
     text-align: center;
-    margin-top: 138px;
+    margin-top: 140px;
 }
 
 main .googlelogo{
@@ -43,17 +59,42 @@ main .googlelogo{
     height: 92px;
 }
 
-main .searchbar{
-    margin-top: 25px;
+.searchbar{
+    width: 554px;
+    height: 39px;
+    border: 1px solid #DCDCDC;
+    margin: 28px auto;
+    border-radius: 24px;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 8px;
+}
+
+.searchbar .search{
     width: 514px;
     height: 34px;
-    border-radius: 34px;
-    border: 1px solid #DCDCDC;
+    border: none;
     outline: none;
+    font-size: 16px;
+}
+
+.searchbar li{
+    display: inline-block;
+}
+
+.searchbar img{
+    position: relative;
+    width: 24px;
+    top: 5px;
+}
+
+.searchbar:hover{
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0);
 }
 
 #middlebuttons{
-    margin-top: 40px;
+    margin-top: 35px;
 }
 
 #middlebuttons li{
@@ -70,6 +111,10 @@ main .searchbar{
     border-radius: 5px;
 }
 
+#middlebuttons a:hover{
+    border: 1px solid #c6c6c6;
+}
+
 footer{
     background: #F0F0F0;
     position: absolute;
@@ -84,21 +129,23 @@ footer{
 
 #sectiontop p{
     margin-left: 25px;
-    padding: 10px;
+    padding: 12px;
+    color: #5f6368;
 }
 
 #bottomnav{
-    margin-left: 25px;
+    margin-left: 23px;
 }
 
 #bottomnav li{
     display: inline-block;
-    padding: 10px 5px;
+    padding: 12px 11px;
 }
 
 #bottomnav a{
     text-decoration: none;
     color: #5f6368;
+    font-size: 13px;
 }
 
 #bottomnav .rightnavs{
